@@ -1,6 +1,69 @@
-.img-javaScript {
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.section {
+  margin-bottom: 100px;
+}
+
+.img-lenguage {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 20px;
+}
+h1 {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.container-result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.mensaje {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+.btn-calcular {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-calcular:hover {
+  background-color: #555;
+}
+select {
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
