@@ -24,9 +24,35 @@ const mensaje = document.getElementById("mensaje");
 mensaje.innerHTML = "Ingrese los números y haga click en calcular";
 
 buttonCalculate.addEventListener("click", () => {
-  const input1 = parseInt(number1.value) || 0;
-  const input2 = parseInt(number2.value) || 0;
-  const input3 = parseInt(number3.value) || 0;
+  
+  // const input1 = parseInt(number1.value) || 0;
+  //  const input2 = parseInt(number2.value) || 0;
+  //  const input3 = parseInt(number3.value) || 0;
+
+  let input1 = 0;
+  let input2 = 0;
+  let input3 = 0;
+
+  if (!isNaN(parseInt(number1.value))) {
+    input1 = parseInt(number1.value);
+  } else {
+    mensaje.innerHTML = "Ingrese un número válido en el campo 1";
+    return;
+  }
+
+  if (!isNaN(parseInt(number2.value))) {
+    input2 = parseInt(number2.value);
+  } else {
+    mensaje.innerHTML = "Ingrese un número válido en el campo 2";
+    return;
+  }
+
+  if (!isNaN(parseInt(number3.value))) {
+    input3 = parseInt(number3.value);
+  } else {
+    mensaje.innerHTML = "Ingrese un número válido en el campo 3";
+    return;
+  }
 
   const total = input1 + input2 + input3;
 
